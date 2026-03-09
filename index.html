@@ -96,6 +96,29 @@ body.dark-mode {
   width: 0%;
   border-radius: 5px;
 }
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
 </style>
 </head>
 <button onclick="darkMode()">Toggle Dark Mode</button>
@@ -192,6 +215,29 @@ window.onload = function() {
     }
   });
 };
+<h2>My Projects</h2>
+
+<div class="projects">
+
+  <div class="project-card">
+    <h3>My Portfolio Website</h3>
+    <p>This is my personal portfolio website built with HTML, CSS and JavaScript.</p>
+    <a href="https://drive.google.com/drive/folders/1vAjPKDFrX7YsWyB9tkx1t1JIgg0P2F__?usp=drive_link">View Project</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Contact Form Website</h3>
+    <p>A website with a contact form that sends messages to my email.</p>
+    <a href="https://github.com/ibechineduthankgod-stack/My-Portfolio-link.git">View Project</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Dark Mode Website</h3>
+    <p>A website with a button that switches between light and dark mode.</p>
+    <a href="https://ibechineduthankgod-stack.github.io/My-Portfolio-link/">View Project</a>
+  </div>
+
+</div>
 </script>
 </body>
 </html>
