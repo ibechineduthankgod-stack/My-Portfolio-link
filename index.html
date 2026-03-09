@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My First Website</title></head>
+<title>My Portfolio Website</title></head>
 
 <style>
 body {
@@ -167,6 +167,34 @@ color:yellow;
 html{
 scroll-behavior:smooth;
 }
+.hero{
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.hero button{
+padding:10px 20px;
+font-size:16px;
+border:none;
+border-radius:5px;
+background:blue;
+color:white;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:darkblue;
+}
 
 body.dark-mode .project-card {
   background-color: #222;
@@ -182,7 +210,16 @@ body.dark-mode .project-card {
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
-<h1 id="home">Hello My Name is Chinedu Ibe</h1>
+<section id="home" class="hero">
+
+<h1>Hi, I'm Chinedu Ibe</h1>
+
+<p>Frontend Developer learning HTML, CSS and JavaScript.</p>
+
+<button onclick="showMessage()">Hire Me</button>
+
+</section>
+<h1 id="home">Hello Welcome to my Portfolio</h1>
 <img
 src="Profile.jpg.png"  alt="My Profile Image" width= "300">
 <p>I am a Passionate Graphics Designer and Web Developer</p>
