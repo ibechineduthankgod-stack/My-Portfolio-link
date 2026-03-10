@@ -226,7 +226,36 @@ width:80%;
 .js{
 width:60%;
 }
+.cv-button{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:green;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
 
+.cv-button:hover{
+background:darkgreen;
+}
+.whatsapp-button{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:12px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 8px rgba(0,0,0,0.3);
+}
+
+.whatsapp-button:hover{
+background:#1ebe5d;
+}
 body.dark-mode .project-card {
   background-color: #222;
   color: white;
@@ -248,7 +277,7 @@ body.dark-mode .project-card {
 <p id="typing"></p>
 
 <button onclick="showMessage()">Hire Me</button>
-
+<a href="Chinedu_Ibe_CV (2).pdf" download class="cv-button">Download My CV</a>
 </section>
 <h1 id="home">Hello Welcome to my Portfolio</h1>
 <img
@@ -316,21 +345,21 @@ target="_blank"><button>View My Portfolio</button></a>
 <div class="skill">
 <p>HTML</p>
 <div class="skill-bar">
-<div class="skill-fill html"></div>
+<div class="skill-fill" id="html-bar"></div>
 </div>
 </div>
 
 <div class="skill">
 <p>CSS</p>
 <div class="skill-bar">
-<div class="skill-fill css"></div>
+<div class="skill-fill" id="css-bar"></div>
 </div>
 </div>
 
 <div class="skill">
 <p>JavaScript</p>
 <div class="skill-bar">
-<div class="skill-fill js"></div>
+<div class="skill-fill" id="js-bar"></div>
 </div>
 </div>
 <script>
@@ -387,13 +416,21 @@ typeEffect();
 
 window.onload = function(){
 
-document.querySelector(".html").style.width = "90%";
-document.querySelector(".css").style.width = "80%";
-document.querySelector(".js").style.width = "60%";
+setTimeout(function(){
 
-};
+document.getElementById("html-bar").style.width = "90%";
+document.getElementById("css-bar").style.width = "80%";
+document.getElementById("js-bar").style.width = "70%";
+
+},300);
+
+}
 
 </script>
+</script>
+<a href="https://wa.me/2348103658301" class="whatsapp-button" target="_blank">
+Chat on WhatsApp
+</a>
 </body>
 </body>
 </html>
