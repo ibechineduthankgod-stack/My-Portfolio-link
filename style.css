@@ -1,0 +1,288 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f7fb;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#0b3d91;
+}
+
+.logo img{
+height:45px;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(120deg,#0b3d91,#1e66ff);
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero-buttons button{
+padding:12px 25px;
+margin:10px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.services{
+padding:80px 40px;
+text-align:center;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+padding:80px 40px;
+text-align:center;
+}
+
+.stat-card{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card h2{
+font-size:40px;
+color:#0b3d91;
+}
+
+.testimonials{
+padding:80px 40px;
+text-align:center;
+background:#eef3ff;
+}
+
+.testimonials-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.testimonial{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.app-download{
+text-align:center;
+padding:80px;
+background:#0b3d91;
+color:white;
+}
+
+.app-buttons button{
+margin:10px;
+padding:12px 20px;
+border:none;
+border-radius:6px;
+}
+
+.whatsapp-button{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#0b3d91;
+color:white;
+}
+.dashboard{
+padding:80px;
+text-align:center;
+}
+
+.bank-card{
+background:linear-gradient(120deg,#0b3d91,#1e66ff);
+color:white;
+padding:40px;
+border-radius:12px;
+width:300px;
+margin:auto;
+margin-bottom:40px;
+}
+
+.transfer-box{
+background:white;
+padding:30px;
+width:300px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.transfer-box input{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+}
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#0b3d91;
+}
+
+.navbar a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+.logo img{
+height:45px;
+mix-blend-mode:screen;
+}
+.services-page{
+background:#0b3d91;
+padding:80px;
+text-align:center;
+color:white;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.service-card{
+background:white;
+color:#333;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+.create-btn{
+background:#0b3d91;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.create-btn:hover{
+background:#082c6c;
+transform:scale(1.05);
+}
+.slide{
+display:none;
+}
+
+.slide.active{
+display:block;
+animation:fade 1s;
+}
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+.dashboard{
+padding:80px;
+}
+
+.dashboard-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.balance-card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+.testimonial-slider{
+max-width:600px;
+margin:auto;
+}
+
+.slide{
+display:none;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.slide.active{
+display:block;
+animation:fade 1s;
+}
+.back-home{
+background:#0b3d91;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+margin-bottom:20px;
+}
