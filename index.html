@@ -1,439 +1,172 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio Website</title></head>
-
-<style>
-body {
-  background-color: lightgreen;
-  color: black;
-}
-
-h1 {
-color: darkblue;
-}
-p {
-color: red;
-font-size: 20px;
-}
-ul {
-    text-align: left;
-    display: inline-block;
-}
-img {
-    border-radius: 10px;
-    margin: 20px 0;
-}
-body {
-  background: linear-gradient(to right, lightblue, lightgreen);
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  color: darkblue;
-  font-size: 40px;
-  animation: moveText 3s infinite alternate;
-}
-
-@keyframes moveText {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(20px); }
-}
-
-p {
-  color: red;
-  font-size: 20px;
-}
-
-ul {
-  text-align: left;
-  display: inline-block;
-}
-
-img {
-  border-radius: 10px;
-  margin: 20px 0;
-  width: 300px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: darkblue;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-button:hover {
-  background-color: blue;
-  transform: scale(1.1);
-}
-body.dark-mode {
-  background: black !important;
-  color: white !important;
-}
-.skill {
-  margin: 20px 0;
-  text-align: left;
-  width: 300px;
-}
-
-.progress-bar {
-  background-color: lightgray;
-  border-radius: 5px;
-  overflow: hidden;
-  height: 20px;
-}
-
-.progress {
-  background-color: darkblue;
-  height: 100%;
-  width: 0%;
-  border-radius: 5px;
-}
-.projects {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.project-card {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.project-card h3 {
-  margin-top: 0;
-}
-
-.project-card a {
-  text-decoration: none;
-  color: blue;
-  font-weight: bold;
-}
-.projects{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.project-card{
-background:white;
-padding:20px;
-border-radius:10px;
-width:250px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
-}
-@media (max-width: 600px) {
-
-.projects{
-flex-direction: column;
-align-items: center;
-}
-
-.project-card{
-width:90%;
-}
-
-}
-body.dark-mode {
-  background-color: black;
-  color: white;
-}
-nav{
-background:#333;
-padding:15px;
-text-align:center;
-}
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-nav a:hover{
-color:yellow;
-}
-html{
-scroll-behavior:smooth;
-}
-.hero{
-padding:80px 20px;
-text-align:center;
-}
-
-.hero h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:18px;
-margin-bottom:20px;
-}
-
-.hero button{
-padding:10px 20px;
-font-size:16px;
-border:none;
-border-radius:5px;
-background:blue;
-color:white;
-cursor:pointer;
-}
-
-.hero button:hover{
-background:darkblue;
-}
-.skill{
-margin:20px 0;
-}
-
-.skill-bar{
-width:100%;
-background:#ddd;
-height:20px;
-border-radius:10px;
-overflow:hidden;
-}
-
-.skill-fill{
-height:100%;
-width:0;
-background:blue;
-border-radius:10px;
-transition:width 2s;
-}
-
-.html{
-width:90%;
-}
-
-.css{
-width:80%;
-}
-
-.js{
-width:60%;
-}
-html{
-scroll-behavior:smooth;
-}
-.cv-button{
-display:inline-block;
-margin-top:15px;
-padding:10px 20px;
-background:green;
-color:white;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
-}
-
-.cv-button:hover{
-background:darkgreen;
-}
-.whatsapp-button{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:12px 18px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 4px 8px rgba(0,0,0,0.3);
-}
-
-.whatsapp-button:hover{
-background:#1ebe5d;
-}
-body.dark-mode .project-card {
-  background-color: #222;
-  color: white;
-}
-</style>
+<title>9Bank - Smart Digital Banking</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 </head>
-<button onclick="darkMode()">Toggle Dark Mode</button>
+
 <body>
-    <nav>
-  <a href="#home">Home</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
+
+<header class="navbar">
+
+<div class="logo">
+<img src="logo.png" alt="9Bank Logo">
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="open-account.html">Open Account</a>
+<a href="login.html">Login</a>
 </nav>
+
+</header>
+
 <section class="hero">
 
-<h1>Hi, I'm Chinedu</h1>
+<h1>Welcome to 9Bank</h1>
 
-<p id="typing"></p>
+<p>
+Welcome to 9Bank — your smart digital bank for future investments,
+secure global transfers, and modern financial management built
+for individuals and businesses worldwide.
+</p>
 
-<button onclick="showMessage()">Hire Me</button>
-<a href="Chinedu_Ibe_CV (2).pdf" download class="cv-button">Download My CV</a>
-</section>
-<h1 id="home">Hello Welcome to my Portfolio</h1>
-<img
-src="Profile.jpg.png"  alt="My Profile Image" width= "300">
-<p>I am a Passionate Graphics Designer and Web Developer</p>
+<div class="hero-buttons">
+<button onclick="location.href='open-account.html'">Open Account</button>
+<button onclick="location.href='login.html'">Login</button>
+</div>
 
-<h2>My Skills</h2>
-<ul>
-    <li>Graphics Design</li>
-    <li>Web Design</li>
-    <li>Logo Designs and Creation</li>
-    <li>Python Programming </li>
-</ul>
-<section>
-    <h2>About Me</h2>
-<p>Iam Chinedu Ibe, a Graphics Designer and Aspiring developer. </p>
 </section>
 
-<button onclick="showMessage()">Click Me</button>
-<section><h2>My Portfolio</h2>
-<a href="portfolio page.html"
-target="_blank"><button>View My Portfolio</button></a>
-<a href="mailto:Ibechineduthankgod@gmail.com">
-  <button>Email Me</button>
-</a>
-<h2 id="projects">My Projects</h2>
+<section class="stats">
 
-<div class="projects">
-
-<div class="project-card">
-<h3>Portfolio Website</h3>
-<p>My personal portfolio built with HTML and CSS.</p>
-<a href="https://drive.google.com/drive/folders/1vAjPKDFrX7YsWyB9tkx1t1JIgg0P2F__?usp=drive_link">View Project</a>
+<div class="stat-card">
+<h2 class="counter" data-target="10000000">0</h2>
+<p>Customers Worldwide</p>
 </div>
 
-<div class="project-card">
-<h2 id="contact">Contact Me</h2>
-<p>A website with a form that sends messages to my email.</p>
-<a href="https://ibechineduthankgod-stack.github.io/My-Portfolio-link/">View Project</a>
+<div class="stat-card">
+<h2 class="counter" data-target="8500000000">0</h2>
+<p>Total Transactions</p>
 </div>
 
-<div class="project-card">
-<h3>Dark Mode Website</h3>
-<p>A website with a button that switches between light and dark mode.</p>
-<a href="https://ibechineduthankgod-stack.github.io/My-Portfolio-link/">View Project</a>
+<div class="stat-card">
+<h2 class="counter" data-target="150">0</h2>
+<p>Countries Supported</p>
 </div>
 
+<div class="stat-card">
+<h2 class="counter" data-target="99">0</h2>
+<p>Security Score</p>
 </div>
-<h2>Contact Me</h2>
-<form action="https://formspree.io/f/xvzwzqwv" method="POST">
 
-<label>Your Name:</label><br>
-<input type="text" name="name" required><br><br>
-
-<label>Your Email:</label><br>
-<input type="email" name="email" required><br><br>
-
-<label>Your Message:</label><br>
-<textarea name="message" required></textarea><br><br>
-
-<button type="submit">Send Message</button>
-</form>
 </section>
-<h2>My Skills</h2>
-<div class="skill">
-<p>HTML</p>
-<div class="skill-bar">
-<div class="skill-fill" id="html-bar"></div>
-</div>
-</div>
 
-<div class="skill">
-<p>CSS</p>
-<div class="skill-bar">
-<div class="skill-fill" id="css-bar"></div>
-</div>
+<section class="stats">
+
+<div class="stat-card">
+<h2 id="users">0</h2>
+<p>Active Customers</p>
 </div>
 
-<div class="skill">
-<p>JavaScript</p>
-<div class="skill-bar">
-<div class="skill-fill" id="js-bar"></div>
+<div class="stat-card">
+<h2 id="transactions">0</h2>
+<p>Transactions Processed</p>
 </div>
+
+<div class="stat-card">
+<h2 id="downloads">0</h2>
+<p>Mobile App Downloads</p>
 </div>
-<script>
-window.onload = function() {
-  const skills = [
-    {selector: '.skill:nth-child(1) .progress', width: 90},
-    {selector: '.skill:nth-child(2) .progress', width: 80},
-    {selector: '.skill:nth-child(3) .progress', width: 70}
-  ];
 
-  skills.forEach(skill => {
-    let elem = document.querySelector(skill.selector);
-    let width = 0;
-    let id = setInterval(frame, 20);
-    function frame() {
-      if(width >= skill.width) {
-        clearInterval(id);
-      } else {
-        width++;
-        elem.style.width = width + '%';
-      }
-    }
-  });
-}
+</section>
 
-</script>
-<script>
-function showMessage() {
-  alert("Welcome to my portfolio website!");
-}
 
-function darkMode() {
-  document.body.classList.toggle("dark-mode");
-}
-</script>
-<script>
+<section class="services">
 
-const text = "Frontend Developer | Website Designer";
-let index = 0;
+<h2>Our Banking Services</h2>
 
-function typeEffect(){
-    document.getElementById("typing").innerHTML += text.charAt(index);
-    index++;
+<div class="services-grid">
 
-    if(index < text.length){
-        setTimeout(typeEffect,100);
-    }
-}
+<div class="service-card">
+<h3>Instant Transfers</h3>
+<p>Send money globally within seconds.</p>
+</div>
 
-typeEffect();
+<div class="service-card">
+<h3>International Payments</h3>
+<p>Secure cross-border payments.</p>
+</div>
 
-</script>
-<script>
+<div class="service-card">
+<h3>Investment Portfolio</h3>
+<p>Grow your wealth digitally.</p>
+</div>
 
-window.onload = function(){
+<div class="service-card">
+<h3>Savings Vault</h3>
+<p>Smart savings with interest.</p>
+</div>
 
-setTimeout(function(){
+</div>
 
-document.getElementById("html-bar").style.width = "90%";
-document.getElementById("css-bar").style.width = "80%";
-document.getElementById("js-bar").style.width = "70%";
+</section>
 
-},300);
+<section class="testimonials">
 
-}
+<h2>What Our Customers Say</h2>
 
-</script>
-</script>
-<a href="https://wa.me/2348103658301" class="whatsapp-button" target="_blank">
-Chat on WhatsApp
-</a>
-</body>
+<div class="testimonial-container">
+
+<div class="testimonial active">
+<p>“I use 9Bank for my business payments and international transfers.
+Everything is fast, secure and reliable.”</p>
+<h4>— Sarah Williams</h4>
+</div>
+
+<div class="testimonial">
+<p>“The best digital bank I’ve used. The dashboard makes it easy
+to track spending and manage savings.”</p>
+<h4>— David Miller</h4>
+</div>
+
+<div class="testimonial">
+<p>“Secure transactions, fast transfers and a modern dashboard.
+9Bank is my favorite digital bank.”</p>
+<h4>— Michael Johnson</h4>
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+</div>
+
+</section>
+
+<section class="app-download">
+
+<img src="logo.png" alt="9Bank Logo">
+
+<h2>Download the 9Bank Mobile App</h2>
+
+<p>Manage your finances anywhere anytime.</p>
+
+<button>Download Android</button>
+<button>Download iOS</button>
+
+</section>
+
+
+<a class="whatsapp-button" href="https://wa.me/2348103658301">Chat</a>
+
+<footer>
+<p>© 2026 9Bank. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
